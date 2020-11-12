@@ -1,8 +1,13 @@
+@font-face {
+	font-family: "visitor";
+	src: url('visitor.ttf');
+}
+
 body{
     background: #131313;
-    font-family: sans-serif;
+    font-family: visitor;
     font-weight: bold;
-    color: #1ed7b7
+    color: #1ed7b7;
 }
 
 #container{
@@ -17,10 +22,11 @@ form {
     padding-bottom: 20px;
     border: 1px solid #1ed7b7;
     background: #232323;
+    border-radius:3px;
+
 
 }
 #container img{
-
     padding-bottom: 10px;
 }
 
@@ -34,7 +40,9 @@ form {
     border: none;
     border-bottom: 1px solid #535353;
     box-sizing: border-box;
-    color:#1ed7b7;
+    color:#FFFFFF;
+    font-family: visitor;
+    font-weight: bold;
 }
 #UserNamePsw:hover {
     width: 100%;
@@ -65,6 +73,10 @@ form {
     border: 1px solid #1ed7b7;
     cursor: pointer;
     width: 100%;
+    font-family: visitor;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius:3px;
 }
 #BtLogin:hover {
     background-color:#232323;
