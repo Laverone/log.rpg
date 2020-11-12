@@ -4,9 +4,9 @@ import random
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/login')
 def index():
-    return render_template('login.html')
+    return render_template('login')
 
 #roll the dice and return the result. parameters: d = dice rolled (4,6,8,10,100), nbD = number of dice rolled
 def rollTheDice(d,nbD=1):

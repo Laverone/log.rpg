@@ -1,0 +1,71 @@
+body{
+    background: #131313;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #535353
+}
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+/* Bordered form */
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f0ec48;
+    background: #232323;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    background-color: #232323;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #535353;
+    box-sizing: border-box;
+}
+input[type=text]:hover, input[type=password]:hover {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #f0ec48;
+    box-sizing: border-box;
+}
+input[type=text]:focus, input[type=password]:focus {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #f0ec48;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #f0ec48;
+    color: #232323;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #f0ec48;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color:#232323;
+    color: #f0ec48;
+    font-weight: bold;
+    border: 1px solid #f0ec48;
+}
