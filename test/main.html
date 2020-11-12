@@ -1,0 +1,20 @@
+<head>
+
+<form action="/acceuil" method="post">
+    <div>
+        <label for="scenario">Titre scénario :</label>
+        <input type="text" id="ScenarioTitle">
+        <label for="account">Compte:</label> <input type="text" id="account">
+
+    <div>
+        <label for="msg">Scénario :</label>
+        <textarea id="msg">
+        </textarea>
+        <label for="ListePerso">Liste Personnages :</label>
+        {% for user in rows %}
+        <<button type="button" name="button">{{user["LogRPG_Character_Name"]}}</button>
+        <p> {{user["LogRPG_Character_Sheet"]}} </p>
+        <p> {{user["LogRPG_Character_Inventory"]}} </p>
+        {% endfor %}
+      </div>
+</form>
