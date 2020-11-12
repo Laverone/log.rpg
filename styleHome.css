@@ -1,0 +1,91 @@
+@font-face
+{
+	font-family: "visitor";
+	src: url('visitor.ttf');
+}
+body
+{
+    background: #131313;
+    font-family: visitor;
+    font-weight: bold;
+    color: #1ed7b7;
+
+}
+#divScenario
+{
+  background: #232323;
+  font-family: visitor;
+  font-weight: bold;
+  color: #1ed7b7;
+  border:1px solid #1ed7b7;
+  padding:10px;
+  width: 1100px;
+  height: 720px;
+  float: left;
+}
+#divList
+{
+  background: #232323;
+  font-family: visitor;
+  font-weight: bold;
+  color: #1ed7b7;
+  border:1px solid #1ed7b7;
+  padding:10px;
+  width:350px;
+  height:320px;
+  float: right;
+}
+#divTitreCompt
+{
+    border:1px solid #1ed7b7;
+    padding:2px;
+}
+input
+{
+  background: #232323;
+  font-family: visitor;
+  font-weight: bold;
+  color: #1ed7b7;
+  border:none;
+  border-radius:0px;
+  border-right:1px solid #1ed7b7;
+}
+input:focus
+{
+  outline:0px;
+}
+#ScenarioTitle
+{
+  width: 700px
+}
+#account
+{
+  border: none;
+}
+#divTextScenario
+{
+  background: #232323;
+  font-family: visitor;
+  font-weight: bold;
+  color: #1ed7b7;
+  border:1px solid #1ed7b7;
+  padding:10px;
+  margin-top:10px;
+  width: 1080px;
+  height: 669px;
+}
+textarea
+{
+  max-width: 1080px;
+  max-height:656px;
+  min-width: 1080px;
+  min-height:656px;
+  background: #232323;
+  font-family: visitor;
+  color: #1ed7b7;
+  border:none;
+}
+textarea:focus
+{
+  outline:0px;
+}

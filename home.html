@@ -1,28 +1,38 @@
 <head>
+  <link rel="stylesheet" href="styleHome.css" media="screen" type="text/css" />
+</head>
 
-<form action="/acceuil" method="post">
-    <div>
+<body>
+  <form action="/acceuil" method="post">
+    <div id="divScenario">
+      <div id="divTitreCompt">
         <label for="scenario">Titre scénario :</label>
         <input type="text" id="ScenarioTitle">
-        <label for="account">Compte:</label> <input type="text" id="account">
-
-    <div>
-        <label for="msg">Scénario :</label>
-        <textarea id="msg">
-        </textarea>
-        <label for="ListePerso">Liste Personnages :</label>
-        {% for user in rows %}
-        <button type="button" name="button">{{user["LogRPG_Character_Name"]}}</button>
-        <p> {{user["LogRPG_Character_Sheet"]}} </p>
-        <p> {{user["LogRPG_Character_Inventory"]}} </p>
-        {% endfor %}
-        <select>
-          <option>Dé 4</option>
-          <option selected>Dé 6</option>
-          <option>Dé 10</option>
-          <option>Dé 100</option>
-        </select>
-        <input type="number" name="de" value="1" min="1" max="10">
-        <input type="submit" name="valide" value="lancer">
+        <label for="account">Compte:</label>
+        <input type="text" id="account">
       </div>
-</form>
+      <div id="divTextScenario">
+        <label for="msg">Scénario :</label>
+        <textarea id="msg"></textarea>
+      </div>
+    </div>
+    <div id="divList"
+      <label for="ListePerso">Liste Personnages :</label>
+      {% for user in rows %}
+      <button type="button" name="button">{{user["LogRPG_Character_Name"]}}</button>
+      <p> {{user["LogRPG_Character_Sheet"]}} </p>
+      <p> {{user["LogRPG_Character_Inventory"]}} </p>
+      {% endfor %}
+    </div>
+
+    <select>
+      <option>Dé 4</option>
+      <option selected>Dé 6</option>
+      <option>Dé 10</option>
+      <option>Dé 100</option>
+    </select>
+
+      <input type="number" name="de" value="1" min="1" max="10">
+      <input type="submit" name="valide" value="lancer">
+  </form>
+</body>
