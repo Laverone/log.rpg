@@ -10,23 +10,22 @@ body{
     margin:0 auto;
     margin-top:10%;
 }
-/* Bordered form */
+/* ==== Bordered form ==== */
 form {
     width:100%;
     padding: 30px;
     padding-bottom: 20px;
     border: 1px solid #1ed7b7;
     background: #232323;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
 }
-#container h1{
-    width: 38%;
-    margin: 0 auto;
+#container img{
+
     padding-bottom: 10px;
 }
 
-/* Full-width inputs */
-input[type=text], input[type=password] {
+/* ==== User name and Password ==== */
+#UserNamePsw{
     background-color: #232323;
     width: 100%;
     padding: 12px 20px;
@@ -35,8 +34,9 @@ input[type=text], input[type=password] {
     border: none;
     border-bottom: 1px solid #535353;
     box-sizing: border-box;
+    color:#1ed7b7;
 }
-input[type=text]:hover, input[type=password]:hover {
+#UserNamePsw:hover {
     width: 100%;
     padding: 12px 20px;
     margin: 10px 0;
@@ -45,7 +45,7 @@ input[type=text]:hover, input[type=password]:hover {
     border-bottom: 1px solid #1ed7b7;
     box-sizing: border-box;
 }
-input[type=text]:focus, input[type=password]:focus {
+#UserNamePsw:focus{
     width: 100%;
     padding: 12px 20px;
     margin: 10px 0;
@@ -55,8 +55,8 @@ input[type=text]:focus, input[type=password]:focus {
     box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
-input[type=submit] {
+/* ==== Login button ==== */
+#BtLogin {
     background-color: #1ed7b7;
     color: #232323;
     padding: 14px 20px;
@@ -66,7 +66,7 @@ input[type=submit] {
     cursor: pointer;
     width: 100%;
 }
-input[type=submit]:hover {
+#BtLogin:hover {
     background-color:#232323;
     color: #1ed7b7;
     font-weight: bold;
