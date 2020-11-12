@@ -2,8 +2,9 @@ body{
     background: #131313;
     font-family: sans-serif;
     font-weight: bold;
-    color: #535353
+    color: #1ed7b7
 }
+
 #container{
     width:400px;
     margin:0 auto;
@@ -13,7 +14,8 @@ body{
 form {
     width:100%;
     padding: 30px;
-    border: 1px solid #f0ec48;
+    padding-bottom: 20px;
+    border: 1px solid #1ed7b7;
     background: #232323;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -28,7 +30,7 @@ input[type=text], input[type=password] {
     background-color: #232323;
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
     display: inline-block;
     border: none;
     border-bottom: 1px solid #535353;
@@ -37,35 +39,36 @@ input[type=text], input[type=password] {
 input[type=text]:hover, input[type=password]:hover {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
     display: inline-block;
     border: none;
-    border-bottom: 1px solid #f0ec48;
+    border-bottom: 1px solid #1ed7b7;
     box-sizing: border-box;
 }
 input[type=text]:focus, input[type=password]:focus {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
     display: inline-block;
     border: none;
-    border-bottom: 1px solid #f0ec48;
+    border-bottom: 1px solid #1ed7b7;
     box-sizing: border-box;
 }
 
 /* Set a style for all buttons */
 input[type=submit] {
-    background-color: #f0ec48;
+    background-color: #1ed7b7;
     color: #232323;
     padding: 14px 20px;
     margin: 8px 0;
-    border: 1px solid #f0ec48;
+    margin-bottom: 0px 0;
+    border: 1px solid #1ed7b7;
     cursor: pointer;
     width: 100%;
 }
 input[type=submit]:hover {
     background-color:#232323;
-    color: #f0ec48;
+    color: #1ed7b7;
     font-weight: bold;
-    border: 1px solid #f0ec48;
+    border: 1px solid #1ed7b7;
 }
