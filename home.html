@@ -25,14 +25,15 @@
       {% endfor %}
     </div>
 
-    <select>
-      <option>Dé 4</option>
-      <option selected>Dé 6</option>
-      <option>Dé 10</option>
-      <option>Dé 100</option>
-    </select>
-
+    <div id="divDices">
+      <button id="btDices46" class="imgD6" type="button"></button>
+      <button id="btDices46" class="imgD4" type="button"></button>
+      <button id="btDices10100" class="imgD100" type="button"></button>
+      <button id="btDices10100" class="imgD10" type="button"></button>
+    </div>
+    <div>
       <input type="number" name="de" value="1" min="1" max="10">
       <input type="submit" name="valide" value="lancer">
+    </div>
   </form>
 </body>
