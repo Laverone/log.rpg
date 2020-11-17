@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import sqlite3
 import random
 
@@ -14,3 +14,18 @@ def rollTheDice(d,nbD=1):
     for i in range(0,nbD) :
         rnd+=random.randint(1,d)
     return(str(rnd))
+
+@app.route("/rollTheDice/", methods = ["POST","GET"])
+def event_dice():
+    dice = request.form.dice
+    nbD = request.form["de"]
+    rollTheDice(dice, nbD)
+
+@app.route('/home', methods = ["GET"])
+def player_list():
+	con = sqlite3.connect('logRPG.db')
+	con.row_factory = sqlite3.Row
+    cur = con.cursor()
+    cur.execute("select * from LogRPG_Character")
+    rows = cur.fetchall()
+    return render_template("home.html", rows = rows)
