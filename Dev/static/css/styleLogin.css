@@ -1,0 +1,84 @@
+@font-face {
+	font-family: "visitor";
+	src: url('../image/visitor.ttf');
+}
+
+body{
+    background: #131313;
+    font-family: visitor;
+    font-weight: bold;
+    color: #1ed7b7;
+}
+
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+/* ==== Bordered form ==== */
+form {
+    width:100%;
+    padding: 30px;
+    padding-bottom: 20px;
+    border: 1px solid #1ed7b7;
+    background: #232323;
+    border-radius:3px;
+
+
+}
+#container img{
+    padding-bottom: 10px;
+}
+
+/* ==== User name and Password ==== */
+#UserNamePsw{
+    background-color: #232323;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #535353;
+    box-sizing: border-box;
+    color:#1ed7b7;
+    font-family: visitor;
+    font-weight: bold;
+}
+#UserNamePsw:hover {
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #1ed7b7;
+    box-sizing: border-box;
+}
+#UserNamePsw:focus{
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #1ed7b7;
+    box-sizing: border-box;
+}
+#UserNamePsw:focus
+{
+	outline:0px;
+}
+
+/* ==== Login button ==== */
+#BtLogin {
+    background-color: #1ed7b7;
+    color: #232323;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-bottom: 0px 0;
+    border: 1px solid #1ed7b7;
+    cursor: pointer;
+    width: 100%;
+    font-family: visitor;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius:3px;
+}
+#BtLogin:hover {
+    background-color:#232323;
+    color: #1ed7b7;
+    font-weight: bold;
+    border: 1px solid #1ed7b7;
+}

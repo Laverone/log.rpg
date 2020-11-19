@@ -1,0 +1,166 @@
+@font-face
+{
+	font-family: "visitor";
+	src: url('../image/visitor.ttf');
+}
+body
+{
+    background: #131313;
+    font-family: visitor;
+    font-weight: bold;
+    color: #1ed7b7;
+		margin:5px;
+
+}
+#divScenario
+{
+  background: #232323;
+  font-family: visitor;
+  font-weight: bold;
+  color: #1ed7b7;
+  border:1px solid #1ed7b7;
+  padding:10px;
+  width: 1100px;
+  height: 720px;
+  float: left;
+	margin-right: 5px;
+
+}
+#divList
+{
+  background: #232323;
+  font-family: visitor;
+  font-weight: bold;
+  color: #1ed7b7;
+  border:1px solid #1ed7b7;
+  padding:10px;
+  width:360px;
+  height:320px;
+  float:right;
+}
+#divTitreCompt
+{
+    border:1px solid #1ed7b7;
+    padding:2px;
+}
+input
+{
+  background: #232323;
+  font-family: visitor;
+  font-weight: bold;
+  color: #1ed7b7;
+  border:none;
+  border-radius:0px;
+  border-right:1px solid #1ed7b7;
+}
+input:focus
+{
+  outline:0px;
+}
+#ScenarioTitle
+{
+  width: 700px
+}
+#account
+{
+  border: none;
+}
+#divTextScenario
+{
+  background: #232323;
+  font-family: visitor;
+  font-weight: bold;
+  color: #1ed7b7;
+  border:1px solid #1ed7b7;
+  padding:10px;
+  margin-top:10px;
+  width: 1080px;
+  height: 669px;
+}
+textarea
+{
+  max-width: 1080px;
+  max-height:656px;
+  min-width: 1080px;
+  min-height:656px;
+  background: #232323;
+  font-family: visitor;
+  color: #1ed7b7;
+  border:none;
+}
+textarea:focus
+{
+  outline:0px;
+}
+#btDices46
+{
+	float: right;
+	margin-top:5px;
+	width:180px;
+	height:69px;
+	text-align: center;
+  font-family: visitor;
+  color: #1ed7b7;
+  border:none;
+}
+#btDices46:focus
+{
+	  outline:0px;
+}
+#btDices10100
+{
+	float: right;
+	margin-top:30px;
+	width:180px;
+	height:69px;
+	text-align: center;
+  font-family: visitor;
+  color: #1ed7b7;
+  border:none;
+}
+#btDices10100:focus
+{
+	  outline:0px;
+}
+#divDices
+{
+		background:#232323;
+		border:1px solid #1ed7b7;
+		padding:5px;
+		width:370px;
+		height:180px;
+		float: right;
+		margin-top:5px;
+}
+.imgD4
+{
+	background-image:url("../image/D4noHover.png");
+}
+.imgD4:hover
+{
+	background-image:url("../image/D4.png");
+}
+.imgD6
+{
+	background-image:url("../image/D6noHover.png");
+}
+.imgD6:hover
+{
+	background-image:url("../image/D6.png");
+}
+.imgD10
+{
+	background-image:url("../image/D10noHover.png");
+}
+.imgD10:hover
+{
+	background-image:url("../image/D10.png");
+}
+.imgD100
+{
+	background-image:url("../image/D100noHover.png");
+}
+.imgD100:hover
+{
+	background-image:url("../image/D100.png");
+}
