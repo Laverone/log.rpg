@@ -20,8 +20,8 @@ body
   color: #1ed7b7;
   border:1px solid #1ed7b7;
   padding:10px;
-  width: 1100px;
-  height: 720px;
+  width: 75%;
+  height: 95%;
   float: left;
 	margin-right: 5px;
 
@@ -34,8 +34,8 @@ body
   color: #1ed7b7;
   border:1px solid #1ed7b7;
   padding:10px;
-  width:360px;
-  height:320px;
+  width:21%;
+  height:30%;
   float:right;
 }
 #divTitreCompt
@@ -43,7 +43,7 @@ body
     border:1px solid #1ed7b7;
     padding:2px;
 }
-input
+input[type="text"]
 {
   background: #232323;
   font-family: visitor;
@@ -74,15 +74,15 @@ input:focus
   border:1px solid #1ed7b7;
   padding:10px;
   margin-top:10px;
-  width: 1080px;
-  height: 669px;
+  width: 98.5%;
+  height: 94%;
 }
 textarea
 {
-  max-width: 1080px;
-  max-height:656px;
-  min-width: 1080px;
-  min-height:656px;
+  max-width: 100%;
+  max-height:99%;
+  min-width: 100%;
+  min-height:99%;
   background: #232323;
   font-family: visitor;
   color: #1ed7b7;
@@ -92,75 +92,126 @@ textarea:focus
 {
   outline:0px;
 }
-#btDices46
-{
-	float: right;
-	margin-top:5px;
-	width:180px;
-	height:69px;
-	text-align: center;
-  font-family: visitor;
-  color: #1ed7b7;
-  border:none;
-}
-#btDices46:focus
-{
-	  outline:0px;
-}
-#btDices10100
-{
-	float: right;
-	margin-top:30px;
-	width:180px;
-	height:69px;
-	text-align: center;
-  font-family: visitor;
-  color: #1ed7b7;
-  border:none;
-}
-#btDices10100:focus
-{
-	  outline:0px;
-}
 #divDices
 {
 		background:#232323;
 		border:1px solid #1ed7b7;
 		padding:5px;
-		width:370px;
-		height:180px;
+		width:21.5%;
+		height:auto;
 		float: right;
 		margin-top:5px;
 }
-.imgD4
+
+#ResultRoll
 {
+	text-align:center;
+	line-height:center;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 40px;
+	float:left;
+	width:50%;
+	height:5%;
+	border:1px solid #1ed7b7;
+}
+#rollBt
+{
+	font-family: visitor;
+	margin-left:5px;
+	float:right;
+	width:31%;
+	text-align:center;
+	line-height:center;
+	height:5.2%;
+	border:1px solid #1ed7b7;
+	margin-top:15px;
+	font-size: 20px;
+	background-color: #1ed7b7;
+	color: #232323;
+}
+#rollBt:hover
+{
+	background-color:#232323;
+	color: #1ed7b7;
+	border: 1px solid #1ed7b7;
+}
+#rollNbDice
+{
+	font-size: 
+	background: #232323;
+	font-family: visitor;
+	color: #1ed7b7;
+	margin-left:5px;
+	float:left;
+	width:15%;
+	text-align:center;
+	height:5.2%;
+	border:1px solid #1ed7b7;
+	margin-top:15px;
+	font-size: 20px;
+}
+.D4
+{
+	float: right;
+	margin-top:5px;
+	width:45%;
+	height:69px;
+	text-align: center;
+	font-family: visitor;
+	color: #1ed7b7;
+	border:none;
 	background-image:url("image/D4noHover.png");
 }
-.imgD4:hover
+.D4:hover
 {
 	background-image:url("image/D4.png");
 }
-.imgD6
+.D6
 {
+	float: left;
+	margin-top:5px;
+	width:45%;
+	height:69px;
+	text-align: center;
+	font-family: visitor;
+	color: #1ed7b7;
+	border:none;
 	background-image:url("image/D6noHover.png");
 }
-.imgD6:hover
+.D6:hover
 {
 	background-image:url("image/D6.png");
 }
-.imgD10
+.D10
 {
+	float: left;
+	margin-top:5px;
+	width:45%;
+	height:69px;
+	text-align: center;
+	font-family: visitor;
+	color: #1ed7b7;
+	border:none;
 	background-image:url("image/D10noHover.png");
 }
-.imgD10:hover
+.D10:hover
 {
 	background-image:url("image/D10.png");
 }
-.imgD100
+.D100
 {
+	float: right;
+	margin-top:5px;
+	width:45%;
+	height:69px;
+	text-align: center;
+	font-family: visitor;
+	color: #1ed7b7;
+	border:none;
 	background-image:url("image/D100noHover.png");
 }
-.imgD100:hover
+.D100:hover
 {
 	background-image:url("image/D100.png");
 }
