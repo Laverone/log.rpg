@@ -25,15 +25,23 @@
       {% endfor %}
     </div>
     <form action="/rollTheDice/">
+      <div id="divLabelResulRoll">
+        <label for="msg">0</label>
+      </div>
       <div id="divDices">
         <button id="btDices46" class="imgD6" type="button" title="D6" name="dice" value="D6"></button>
         <button id="btDices46" class="imgD4" type="button" title="D4" name="dice" value="D4"></button>
         <button id="btDices10100" class="imgD100" type="button" title="D100" name="dice" value="D100"></button>
         <button id="btDices10100" class="imgD10" type="button" title="D10" name="dice" value="D10"></button>
       </div>
-      <div>
+      <div id="divBtRoll">
         <input type="number" name="de" value="1" min="1" max="10">
-        <input type="submit" name="valide" value="lancer">
+        <input type="submit" name="valide" value="roll">
+      </div>
+      <div id="divBtLog">
+        <input type="submit" name="newScenario" value="Nouvau scénario">
+        <input type="submit" name="newCharacter" value="Nouvau personnage">
+        <input type="submit" name="save" value="Sauvgarder">
       </div>
     </form>
   </form>
