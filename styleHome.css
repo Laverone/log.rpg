@@ -10,7 +10,6 @@ body
     font-weight: bold;
     color: #1ed7b7;
 		margin:5px;
-
 }
 #divScenario
 {
@@ -138,8 +137,8 @@ textarea:focus
 }
 #rollNbDice
 {
-	font-size: 
-	background: #232323;
+	font-size:20px;
+	background-color: #232323;
 	font-family: visitor;
 	color: #1ed7b7;
 	margin-left:5px;
@@ -214,4 +213,25 @@ textarea:focus
 .D100:hover
 {
 	background-image:url("image/D100.png");
+}
+#btScenario
+{
+	font-family: visitor;
+	margin-left:5px;
+	float:right;
+	width:22%;
+	text-align:center;
+	line-height:center;
+	height:5.2%;
+	border:1px solid #1ed7b7;
+	margin-top:15px;
+	font-size: 20px;
+	background-color: #1ed7b7;
+	color: #232323;
+}
+#btScenario:hover
+{
+	background-color:#232323;
+	color: #1ed7b7;
+	border: 1px solid #1ed7b7;
 }
