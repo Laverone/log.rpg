@@ -1,0 +1,55 @@
+<head>
+  <link rel="stylesheet" href="/static/css/styleHome.css" media="screen" type="text/css" />
+</head>
+
+<body>
+  <form action="/acceuil" method="post">
+    <div id="divScenario">
+      <div id="divTitreCompt">
+        <label for="scenario">Titre scénario :</label>
+        <input type="text" id="ScenarioTitle">
+        <label for="account">Compte:</label>
+        <p id="accountName"></p>
+      </div>
+      <div id="divTextScenario">
+        <label for="msg">Scénario :</label>
+        <textarea id="msg"></textarea>
+      </div>
+    </div>
+    <div id="divList">
+      <label for="ListePerso">Liste Personnages :</label>
+      {% for user in rows %}
+      <button type="button" name="button">{{user["LogRPG_Character_Name"]}}</button>
+      <p> {{user["LogRPG_Character_Sheet"]}} </p>
+      <p> {{user["LogRPG_Character_Inventory"]}} </p>
+      {% endfor %}
+    </div>
+    <form action="/home">
+      <div id="divDices">
+        <input id="btDices46" class="imgD6" type="radio" title="D6" name="dice" value="6" checked>D6</input>
+        <input id="btDices46" class="imgD4" type="radio" title="D4" name="dice" value="4">D4</input>
+        <input id="btDices10100" class="imgD100" type="radio" title="D100" name="dice" value="100">D100</input>
+        <input id="btDices10100" class="imgD10" type="radio" title="D10" name="dice" value="10">D10</input>
+      </div>
+      <div>
+        <input id="nbDice" type="range" name="nbDice" value="1" min="1" max="10">
+        <button type="button" onclick="getRoll()">Lancer !</button>
+        <p id="result"></p>
+      </div>
+    </form>
+  </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    function getRoll() {
+      var d = document.getElementsByName("dice");
+      var nbD = $("#nbDice").val();
+      d.forEach((dice) => {
+        if (dice.checked) {
+          $.getJSON("/rollNdice/" + dice.value + "/" + nbD, function (data) {
+            document.getElementById("result").innerHTML = "Result: " + data["result"]
+          });
+        }
+      });
+    }
+  </script>
+</body>
