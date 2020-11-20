@@ -9,7 +9,7 @@ CREATE TABLE "LogRPG_Senario" (
   "LogRPG_Senario_Title" TEXT NOT NULL,
   "LogRPG_Senario_Text" TEXT,
   "LogRPG_Senario_Account_Id" INTEGER NOT NULL,
-  CONSTRAINT "fk_LogRPG_Senario_LogRPG_Account_1" FOREIGN KEY ("LogRPG_Senario_Account_Id") REFERENCES "LogRPG_Account" ("LogRPG_Account_Id")
+  CONSTRAINT "fk_LogRPG_Senario_LogRPG_Account_1" FOREIGN KEY("LogRPG_Senario_Account_Id") REFERENCES "LogRPG_Account"("LogRPG_Account_Id")
 );
 
 CREATE TABLE "LogRPG_Character" (
@@ -18,9 +18,5 @@ CREATE TABLE "LogRPG_Character" (
   "LogRPG_Character_Sheet" TEXT,
   "LogRPG_Character_Inventory" TEXT,
   "LogRPG_Character_Senario_Id" INTEGER NOT NULL,
-  CONSTRAINT "fk_LogRPG_Character_LogRPG_Senario_1" FOREIGN KEY ("LogRPG_Character_Senario_Id") REFERENCES "LogRPG_Senario" ("LogRPG_Senario_Id")
+  CONSTRAINT "fk_LogRPG_Character_LogRPG_Senario_1" FOREIGN KEY("LogRPG_Character_Senario_Id") REFERENCES "LogRPG_Senario"("LogRPG_Senario_Id")
 );
-
-INSERT INTO LogRPG_Account VALUES ('Mj','Mj')
-INSERT INTO LogRPG_Senario VALUES ('Exemple','Bienvenue.\nCeci est un exemple',1)
-INSERT INTO LogRPG_Character VALUES ('Guts')
