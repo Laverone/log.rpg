@@ -10,7 +10,7 @@
     <div id="container">
         <!-- login zone -->
 
-        <form action="/login">
+        <form action="/login" method="post">
             <img src="../static/image/logoLogRPG.png">
 
 
@@ -18,9 +18,11 @@
 
             <input id="UserNamePsw" name="password" type="password" placeholder="Password" required>
 
-            <input id="BtLogin" type="submit" value='Log In' method="post">
+            <p id="Error"> {{ msg }} </p>
 
-            <input id="BtLogin" type="submit" value='Register' method="get">
+            <input id="BtLogin" type="submit" value='Log In'>
+
+            <p class="BtLogin">Don't have an account ? <a href="{{url_for('register')}}"> Sign Up here ! </a></p>
         </form>
     </div>
 </body>

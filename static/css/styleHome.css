@@ -1,4 +1,4 @@
-@font-face
+font-face
 {
 	font-family: "visitor";
 	src: url('../image/visitor.ttf');
@@ -209,21 +209,21 @@ textarea:focus
 	color: #1ed7b7;
 	border: 1px solid #1ed7b7;
 }
-button[type="button"]
+button[type="button"],input[type="submit"]
 {
 	font-family: visitor;
-	float:right;
+	float:left;
 	width:auto;
 	text-align:center;
 	line-height:center;
 	height:auto;
 	border:1px solid #1ed7b7;
-	margin-top:15px;
+	margin:15px;
 	font-size: 20px;
 	background-color: #1ed7b7;
 	color: #232323;
 }
-button[type="button"]:hover
+button[type="button"]:hover,input[type="submit"]:hover
 {
 	background-color:#232323;
 	color: #1ed7b7;
