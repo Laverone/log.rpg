@@ -1,5 +1,5 @@
 import sqlite3
-
+"""
 conn = sqlite3.connect('LogRPG.db')
 cur = conn.cursor()
 
@@ -16,3 +16,17 @@ cur.execute(req)
 conn.commit()
 
 conn.close
+"""
+con = sqlite3.connect('LogRPG.db')
+cur = con.cursor()
+cur.execute("DELETE FROM LogRPG_Account WHERE LogRPG_Account_Id = 3")
+con.commit()
+cur.execute("DELETE FROM LogRPG_Account WHERE LogRPG_Account_Id = 4")
+con.commit()
+cur.execute("DELETE FROM LogRPG_Account WHERE LogRPG_Account_Id = 5")
+con.commit()
+cur.execute("DELETE FROM LogRPG_Account WHERE LogRPG_Account_Id = 6")
+con.commit()
+cur.execute("DELETE FROM LogRPG_Account WHERE LogRPG_Account_Id = 7")
+con.commit()
+con.close()
